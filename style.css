@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.87);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 28.5px;
+}
+
+button {
+    color: white;
+    background-color: rgba(25, 165, 25, 0.932);
+    border: none;
+    border-radius: 3px;
+    width: 350px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.caracteres {
+    margin: 23px;
+}
+
+#volume {
+    width: 350px;
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 350px;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    width: 333px;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
